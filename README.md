@@ -14,7 +14,7 @@ theming.
     - i3status
     - rofi
     - feh
-2. Install the following (or remove their related `PATH`s from `.zshenv` and vim plugins in `.vim/vimrc`):
+2. Install the following (or remove their related `PATH`s from `.zshenv` and vim config in `.vim/vimrc`/`.vim/ftplugin/after`):
     - Haskell
     - Racket
     - OpenJDK 11
