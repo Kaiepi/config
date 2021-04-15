@@ -22,7 +22,6 @@ export IDRIS_CC="clang"
 export AUTOMAKE_VERSION="1.16"
 export AUTOCONF_VERSION="2.69"
 
-alias gvim='gvim 2>/dev/null'
 #alias node-gyp='CC=egcc CXX=eg++ CPP=ecpp node-gyp'
 alias prove6='env RAKUDOLIB=lib prove -e raku -vr $@'
 alias cabal="$HOME/.cabal/bin/cabal"
