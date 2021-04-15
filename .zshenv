@@ -25,5 +25,4 @@ export AUTOCONF_VERSION="2.69"
 alias gvim='gvim 2>/dev/null'
 #alias node-gyp='CC=egcc CXX=eg++ CPP=ecpp node-gyp'
 alias prove6='env RAKUDOLIB=lib prove -e raku -vr $@'
-alias fucking-dns='doas sh /etc/netstart iwm0'
 alias cabal="$HOME/.cabal/bin/cabal"
