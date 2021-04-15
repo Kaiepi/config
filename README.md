@@ -15,12 +15,12 @@ theming.
     - rofi
     - feh
 2. Install the following (or remove their related `PATH`s from `.zshenv`):
-    - Raku (to `$HOME/.raku`)
-    - OpenJDK 11
-    - Idris (to `$HOME/.idris`)
-    - Idris 2 (to `$HOME/.idris2`)
     - Haskell
     - Racket
+    - OpenJDK 11
+    - Raku (to `$HOME/.raku`)
+    - Idris (to `$HOME/.idris`)
+    - Idris 2 (to `$HOME/.idris2`)
 3. Set up X.org with the [Iosevka](https://github.com/be5invis/Iosevka) font family.
 4. Follow the instructions for installing the [Plug](https://github.com/junegunn/vim-plug) vim plugin.
 5. Pick a background to use and save it as `~/background.jpg` (not sure if mine's copyrighted...).
