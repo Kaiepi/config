@@ -1,28 +1,28 @@
-XTerm.termName:                 xterm-256color
-XTerm*vt100.loginShell:         true
-XTerm*vt100.faceName:           Iosevka Term Regular
-XTerm*vt100.faceSize:           10
-XTerm*vt100.combiningChars:     5
-XTerm*vt100.titleModes:         12
-XTerm*vt100.printAttributes:    2
-XTerm*vt100.internalBorder:     4
-XTerm*vt100.highlightSelection: true
-XTerm*vt100.trimSelection:      true
-XTerm*vt100.on4Clicks:          group
-XTerm*vt100.on5Clicks:          all
-XTerm*vt100.saveLines:          16384
-XTerm*vt100.translations:       #override \
-    Ctrl Meta <Key> v:          insert-selection(CLIPBOARD)\n\
-	Ctrl Meta <Key> c:          copy-selection(CLIPBOARD)\n
+XTerm.termName:                  xterm-256color
+XTerm*vt100.loginShell:          true
+XTerm*vt100.faceName:            Iosevka Term Regular
+XTerm*vt100.faceSize:            10
+XTerm*vt100.combiningChars:      5
+XTerm*vt100.titleModes:          12
+XTerm*vt100.printAttributes:     2
+XTerm*vt100.internalBorder:      4
+XTerm*vt100.highlightSelection:  true
+XTerm*vt100.trimSelection:       true
+XTerm*vt100.on4Clicks:           group
+XTerm*vt100.on5Clicks:           all
+XTerm*vt100.saveLines:           16384
+XTerm*vt100.translations:        #override \
+    Ctrl Meta <Key> v:           insert-selection(CLIPBOARD)\n\
+    Ctrl Meta <Key> c:           copy-selection(CLIPBOARD)\n
 ! OpenBSD-specific defaults:
-XTerm*vt100.deleteIsDEL:        false
+XTerm*vt100.deleteIsDEL:         false
 ! XTerm*vt100.backarrowKeyIsErase: true
 ! XTerm*vt100.cursorBlink:         never
 ! XTerm*vt100.locale:              UTF-8
 ! XTerm*vt100.modifyFunctionKeys:  0
 ! XTerm*vt100.precompose:          false
 ! XTerm*vt100.ptyInitialErase:     true
-XTerm*vt100.scrollBar:          false
+XTerm*vt100.scrollBar:           false
 
 ! Based off https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh,
 ! modified to share a background with the Badwolf vim theme.
