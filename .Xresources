@@ -1,0 +1,8 @@
+Xft.dpi:       96
+Xft.autohint:  false
+Xft.hinting:   true
+Xft.hintstyle: hintslight
+Xft.antialias: false
+Xft.lcdfilter: lcddefault
+Xft.rgba:      none
+Xft.color:     true

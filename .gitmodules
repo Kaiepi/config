@@ -1,0 +1,48 @@
+[submodule ".vim/bundle/badwolf"]
+	path = .vim/bundle/badwolf
+	url = git@github.com:sjl/badwolf.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree
+[submodule ".vim/bundle/deoplete.nvim"]
+	path = .vim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim
+[submodule ".vim/bundle/nvim-yarp"]
+	path = .vim/bundle/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp
+[submodule ".vim/bundle/vim-hug-neovim-rpc"]
+	path = .vim/bundle/vim-hug-neovim-rpc
+	url = git@github.com:roxma/vim-hug-neovim-rpc
+[submodule ".vim/bundle/vim-easy-align"]
+	path = .vim/bundle/vim-easy-align
+	url = git@github.com:junegunn/vim-easy-align
+[submodule ".vim/bundle/c.vim"]
+	path = .vim/bundle/c.vim
+	url = git@github.com:vim-scripts/c.vim
+[submodule ".vim/bundle/haskell-vim"]
+	path = .vim/bundle/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim
+[submodule ".vim/bundle/stylish-haskell"]
+	path = .vim/bundle/stylish-haskell
+	url = git@github.com:jaspervdj/stylish-haskell
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript
+[submodule ".vim/bundle/vim-javascript-syntax"]
+	path = .vim/bundle/vim-javascript-syntax
+	url = git@github.com:jelera/vim-javascript-syntax
+[submodule ".vim/bundle/vim-raku"]
+	path = .vim/bundle/vim-raku
+	url = git@github.com:Raku/vim-raku
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim
+[submodule ".vim/bundle/idris-vim"]
+	path = .vim/bundle/idris-vim
+	url = git@github.com:idris-hackers/idris-vim
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala
+[submodule ".vim/autoload/vim-plug"]
+	path = .vim/autoload/vim-plug
+	url = git@github.com:junegunn/vim-plug.git

@@ -1,0 +1,66 @@
+XTerm.termName:                 xterm-256color
+XTerm*vt100.loginShell:         true
+XTerm*vt100.faceName:           Iosevka Term Regular
+XTerm*vt100.faceSize:           10
+XTerm*vt100.combiningChars:     5
+XTerm*vt100.titleModes:         12
+XTerm*vt100.printAttributes:    2
+XTerm*vt100.internalBorder:     4
+XTerm*vt100.highlightSelection: true
+XTerm*vt100.trimSelection:      true
+XTerm*vt100.on4Clicks:          group
+XTerm*vt100.on5Clicks:          all
+XTerm*vt100.saveLines:          16384
+XTerm*vt100.translations:       #override \
+    Ctrl Meta <Key> v:          insert-selection(CLIPBOARD)\n\
+	Ctrl Meta <Key> c:          copy-selection(CLIPBOARD)\n
+! OpenBSD-specific defaults:
+XTerm*vt100.deleteIsDEL:        false
+! XTerm*vt100.backarrowKeyIsErase: true
+! XTerm*vt100.cursorBlink:         never
+! XTerm*vt100.locale:              UTF-8
+! XTerm*vt100.modifyFunctionKeys:  0
+! XTerm*vt100.precompose:          false
+! XTerm*vt100.ptyInitialErase:     true
+XTerm*vt100.scrollBar:          false
+
+! Based off https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh,
+! modified to share a background with the Badwolf vim theme.
+XTerm*vt100.background: #1C1B1A
+XTerm*vt100.foreground: #FFFFFF
+! Black
+XTerm*vt100.color0:     #1C1B1A
+! Red
+XTerm*vt100.color1:     #FF0000
+! Green
+XTerm*vt100.color2:     #79FF0F
+! Yellow
+XTerm*vt100.color3:     #D3BF00
+! Blue
+XTerm*vt100.color4:     #396BD7
+! Magenta
+XTerm*vt100.color5:     #B449BE
+! Cyan
+XTerm*vt100.color6:     #66CCFF
+! White
+XTerm*vt100.color7:     #BBBBBB
+! Strong Black
+XTerm*vt100.color8:     #666666
+! Strong Red
+XTerm*vt100.color9:     #FF0080
+! Strong Green
+XTerm*vt100.color10:    #66FF66
+! Strong Yellow
+XTerm*vt100.color11:    #F3D64E
+! Strong Blue
+XTerm*vt100.color12:    #709AED
+! Strong Magenta
+XTerm*vt100.color13:    #DB57E6
+! Strong Cyan
+XTerm*vt100.color14:    #7ADFF2
+! Strong White
+XTerm*vt100.color15:    #FFFFFF
+
+Vim*useSchemes:     all
+Vim*sgiMode:        true
+Vim*useEnhancedFSB: true

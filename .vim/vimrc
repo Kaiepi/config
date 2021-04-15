@@ -1,0 +1,120 @@
+set nocompatible
+
+"Plug 'tomasr/molokai'
+call plug#begin('~/.vim/bundle')
+Plug 'sjl/badwolf'
+
+Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'junegunn/vim-easy-align'
+
+Plug 'vim-scripts/c.vim', { 'for': 'c' }
+
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'jaspervdj/stylish-haskell', { 'for': 'haskell' }
+
+Plug 'pangloss/vim-javascript',      { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+
+Plug 'Raku/vim-raku', { 'for': 'raku' }
+
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+
+Plug 'idris-hackers/idris-vim', { 'for': 'idris' }
+
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+call plug#end()
+
+set autoread
+
+set shell=$SHELL
+set tty=$TERM
+set ttymouse=xterm2
+set mouse=a
+
+set t_Co=256
+set termguicolors
+set background=dark
+colorscheme badwolf
+"colorscheme molokai
+
+if &termencoding == ""
+	let &termencoding = &encoding
+endif
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set fileencodings=utf-8,latin1
+
+set ffs=unix,mac,dos
+
+set ignorecase
+set smartcase
+
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+set backspace=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
+set smarttab
+
+set ruler
+set number
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+map <C-n> :NERDTreeToggle<CR>
+
+" vipga=
+xmap ga <Plug>(EasyAlign)
+" gaip=
+nmap ga <Plug>(EasyAlign)
+
+function! CleverTab(shift)
+    if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
+        return "\<Tab>"
+    elseif a:shift
+        return "\<C-P>"
+	else
+		return "\<C-N>"
+	endif
+endfunction
+
+inoremap <Tab>   <C-R>=CleverTab(0)<CR>
+inoremap <S-Tab> <C-R>=CleverTab(1)<CR>
+
+autocmd BufRead,BufNewFile *.c set ft=c
+autocmd BufRead,BufNewFile *.decl set ft=decl
+autocmd BufRead,BufNewFile *.h set ft=c
+autocmd BufRead,BufNewFile *.hs set ft=haskell
+autocmd BufRead,BufNewFile *.idr set ft=idris
+autocmd BufRead,BufNewFile *.java set ft=java
+autocmd BufRead,BufNewFile *.js set ft=javascript
+autocmd BufRead,BufNewFile *.json set ft=json
+autocmd BufRead,BufNewFile *.jsx set ft=javascript
+autocmd BufRead,BufNewFile *.nqp set ft=raku
+autocmd BufRead,BufNewFile *.p6 set ft=raku
+autocmd BufRead,BufNewFile *.pl6 set ft=raku
+autocmd BufRead,BufNewFile *.pm6 set ft=raku
+autocmd BufRead,BufNewFile *.pod6 set ft=raku
+autocmd BufRead,BufNewFile *.raku set ft=raku
+autocmd BufRead,BufNewFile *.rakumod set ft=raku
+autocmd BufRead,BufNewFile *.rakutest set ft=raku
+autocmd BufRead,BufNewFile *.py set ft=python
+autocmd BufRead,BufNewFile *.scala set ft=scala
+autocmd BufRead,BufNewFile *.ts set ft=typescript
+autocmd BufRead,BufNewFile *.yml set ft=yaml
+
+call deoplete#enable()
+call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
+call deoplete#custom#option('auto_complete_delay', 250)
+call deoplete#custom#option('auto_refresh_delay', 100)
+
+autocmd BufRead,BufNewFile /home/morfent/Documents/raku/doc/*.pod6 setlocal ft=raku sw=4 ts=4 sts=4 tw=72 et
