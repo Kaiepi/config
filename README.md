@@ -7,14 +7,21 @@ theming.
 ## Installing
 
 1. Install the following packages:
-  - zsh
-  - vim
-  - git
-  - i3
-  - i3status
-  - rofi
-  - feh
-2. Set up X.org with the [Iosevka](https://github.com/be5invis/Iosevka) font family.
-3. Follow the instructions for installing the [Plug](https://github.com/junegunn/vim-plug) vim plugin.
-4. Pick a background to use and save it as `~/background.jpg` (not sure if mine's copyrighted...).
-5. You should be good to go by this point! If not, raise an issue.
+    - zsh
+    - vim
+    - git
+    - i3
+    - i3status
+    - rofi
+    - feh
+2. Install the following (or remove their related `PATH`s from `.zshenv`):
+    - Raku (to `$HOME/.raku`)
+    - OpenJDK 11
+    - Idris (to `$HOME/.idris`)
+    - Idris 2 (to `$HOME/.idris2`)
+    - Haskell
+    - Racket
+3. Set up X.org with the [Iosevka](https://github.com/be5invis/Iosevka) font family.
+4. Follow the instructions for installing the [Plug](https://github.com/junegunn/vim-plug) vim plugin.
+5. Pick a background to use and save it as `~/background.jpg` (not sure if mine's copyrighted...).
+6. You should be good to go by this point! If not, raise an issue.
