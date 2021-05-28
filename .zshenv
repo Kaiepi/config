@@ -1,8 +1,10 @@
-PATH="$PATH:$HOME/.raku/bin:$HOME/.raku/share/perl6/site/bin" # Raku
-PATH="$PATH:/usr/local/jdk-11/bin"                            # Java
-PATH="$PATH:$HOME/.cabal/bin:/usr/local/lib/ghc/bin/"         # Haskell
-PATH="$PATH:$HOME/.racket/7.7/bin"                            # Racket
-PATH="$PATH:$HOME/.idris2/bin"                                # Idris 2
+PATH="$HOME/.raku/bin:$HOME/.raku/share/perl6/site/bin:$PATH" # Raku
+PATH="/usr/local/jdk-11/bin:$PATH"                            # Java
+PATH="$HOME/.cabal/bin:/usr/local/lib/ghc/bin/:$PATH"         # Haskell
+PATH="$HOME/.racket/7.7/bin:$PATH"                            # Racket
+PATH="$HOME/.idris2/bin:$PATH"                                # Idris 2
+PATH="$HOME/.sbt/bin:$PATH"                                   # SBT
+PATH="$HOME/.local/bin:$PATH"
 export PATH
 
 export SHELL="zsh"
@@ -24,4 +26,3 @@ export AUTOCONF_VERSION="2.69"
 
 #alias node-gyp='CC=egcc CXX=eg++ CPP=ecpp node-gyp'
 alias prove6='env RAKUDOLIB=lib prove -e raku -vr $@'
-alias cabal="$HOME/.cabal/bin/cabal"
