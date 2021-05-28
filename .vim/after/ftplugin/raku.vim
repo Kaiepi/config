@@ -1,21 +1,16 @@
 let g:easy_align_delimiters = {
 \   's': {
-\	   'pattern': ':\?\(\$\|@\|&\|%\|\\\|\*\|+\)[.!^*]\?',
+\	   'pattern': ':\?\(\$\|@\|&\|%\|\\\|\*\|+\)',
 \      'left_margin': 1,
 \      'right_margin': 0,
+\      'ignore_unmatched': 1,
+\      'ignore_groups': ['String', 'Comment'],
 \	},
-\   '-': {
-\		'pattern': '-',
-\		'left_margin': 0,
-\		'right_margin': 0,
-\		'stick_to_left': 0,
-\	},
-\   'p': {
-\      'pattern': '\(is\|does\|has\|will\|where\|=\)',
+\   't': {
+\      'pattern': '\ze\s\(is\|does\|will\|where\|=\)',
 \      'left_margin': 1,
-\      'right_margin': 1,
-\      'stick_to_left': 0,
-\      'stick_to_right': 1,
+\      'right_margin': 0,
+\      'ignore_unmatched': 1,
 \      'ignore_groups': ['String', 'Comment'],
 \  },
 \}
