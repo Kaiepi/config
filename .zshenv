@@ -20,6 +20,8 @@ export RAKUDO_HOME="$HOME/.raku/share/perl6"
 export JAVA_HOME="/usr/local/jdk-11"
 export HS_ENCODING="UTF-8"
 export IDRIS_CC="clang"
+export IDRIS2_CC="clang"
+export IDRIS2_CG="racket"
 
 export AUTOMAKE_VERSION="1.16"
 export AUTOCONF_VERSION="2.69"
