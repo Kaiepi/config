@@ -1,13 +1,18 @@
 set nocompatible
 
-"Plug 'tomasr/molokai'
 call plug#begin('~/.vim/bundle')
 Plug 'sjl/badwolf'
 
-Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
 Plug 'junegunn/vim-easy-align'
 
 Plug 'vim-scripts/c.vim', { 'for': 'c' }
@@ -30,15 +35,19 @@ call plug#end()
 set autoread
 
 set shell=$SHELL
-set tty=$TERM
-set ttymouse=xterm2
 set mouse=a
 
-set t_Co=256
+if has('nvim')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+else
+    set tty=$TERM
+    set ttymouse=xterm2
+    set t_Co=256
+endif
+
 set termguicolors
 set background=dark
 colorscheme badwolf
-"colorscheme molokai
 
 if &termencoding == ""
 	let &termencoding = &encoding
