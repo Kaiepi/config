@@ -26,5 +26,7 @@ export IDRIS2_CG="racket"
 export AUTOMAKE_VERSION="1.16"
 export AUTOCONF_VERSION="2.69"
 
+export GDK_USE_XFT=1
+
 #alias node-gyp='CC=egcc CXX=eg++ CPP=ecpp node-gyp'
 alias prove6='env RAKUDOLIB=lib prove -e raku -vr $@'
