@@ -8,7 +8,7 @@ window:
 
   dynamic_padding: false
 
-  title: Alacritty
+  dynamic_title: true
 
   class:
     instance: Alacritty
