@@ -8,12 +8,13 @@ theming.
 
 1. Install the following packages:
     - zsh
-    - vim
+    - neovim
     - git
     - i3
     - i3status
     - rofi
     - feh
+    - alacritty (optional, fallback to xterm)
 2. Install the following (or remove their related `PATH`s from `.zshenv` and vim config in `.vim/vimrc`/`.vim/ftplugin/after`):
     - Haskell
     - Racket
