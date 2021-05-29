@@ -1,1 +1,1 @@
-GuiFont! Iosevka Extended:h10
+GuiFont! Iosevka Fixed SS05 Extended:h10

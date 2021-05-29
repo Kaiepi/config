@@ -1,6 +1,6 @@
 XTerm.termName:                  xterm-256color
 XTerm*vt100.loginShell:          true
-XTerm*vt100.faceName:            Iosevka Term Regular
+XTerm*vt100.faceName:            Iosevka Fixed SS05
 XTerm*vt100.faceSize:            10
 XTerm*vt100.combiningChars:      5
 XTerm*vt100.titleModes:          12
