@@ -1,0 +1,77 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 0
+    y: 0
+  dynamic_padding: false
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+font:
+  normal:
+    family: Iosevka Term
+    style: Extended
+
+  italic:
+    family: Iosevka Term
+    style: Extended Italic
+
+  bold:
+    family: Iosevka Term
+    style: Bold Extended
+
+  bold_italic:
+    family: Iosevka Term
+    style: Bold Extended Italic
+
+  size: 6.0
+
+  offset:
+    x: 0
+    y: 1
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '0x000000'
+    foreground: '0xFFFFFF'
+
+  selection:
+    background: '0x79FF0F'
+
+  normal:
+    black:   '0x2A2A2A'
+    red:     '0xFF0000'
+    green:   '0x79FF0F'
+    yellow:  '0xD3BF00'
+    blue:    '0x396DB7'
+    magenta: '0xB449BE'
+    cyan:    '0x66CCFF'
+    white:   '0xBBBBBB'
+
+  bright:
+    black:   '0x666666'
+    red:     '0xFF0080'
+    green:   '0x66FF66'
+    yellow:  '0xF3D64E'
+    blue:    '0x709AED'
+    magenta: '0xDB57E6'
+    cyan:    '0x7ADFF2'
+    white:   '0xFFFFFF'
+
+background_opacity: 1.0
+
+dynamic_title: true
+
+key_binding:
+  - { key: V, mods: Super|Shift, action: Paste, mode: ~Alt }
+  - { key: C, mods: Super|Control, action: Copy, mode: ~Alt }
+  - { key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+  - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
