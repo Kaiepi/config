@@ -170,13 +170,12 @@ bindsym Mod4+r mode "resize"
 bindsym Mod4+Shift+s exec "maim -s > ~/Downloads/$(date +screenshot-%F-%s.png)"
 
 # Rice
-# Based off https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh,
-# modified to share a background with the Badwolf vim theme.
-client.focused          #1C1B1A #FF0080 #FFFFFF #1C1B1A #1C1B1A
-client.focused_inactive #1C1B1A #1C1B1A #FFFFFF #1C1B1A #1C1B1A
-client.unfocused        #1C1B1A #1C1B1A #FFFFFF #1C1B1A #1C1B1A
-client.urgent           #1C1B1A #FF0000 #FFFFFF #1C1B1A #1C1B1A
-client.placeholder      #1C1B1A #1C1B1A #FFFFFF #1C1B1A #1C1B1A
+# https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh
+client.focused          #2A2A2A #FF0080 #FFFFFF #2A2A2A #2A2A2A
+client.focused_inactive #2A2A2A #2A2A2A #FFFFFF #2A2A2A #2A2A2A
+client.unfocused        #2A2A2A #2A2A2A #FFFFFF #2A2A2A #2A2A2A
+client.urgent           #2A2A2A #FF0000 #FFFFFF #2A2A2A #2A2A2A
+client.placeholder      #2A2A2A #2A2A2A #FFFFFF #2A2A2A #2A2A2A
 client.background       #FFFFFF
 
 default_border normal 0
@@ -186,13 +185,13 @@ default_border normal 0
 bar {
         status_command i3status
         colors {
-                background #1C1B1A
+                background #2A2A2A
                 statusline #FFFFFF
-                separator  #1C1B1A
+                separator  #2A2A2A
 
                 focused_workspace  #FF0080 #FF0080 #FFFFFF
-                active_workspace   #1C1B1A #1C1B1A #FFFFFF
-                inactive_workspace #1C1B1A #1C1B1A #FFFFFF
+                active_workspace   #2A2A2A #2A2A2A #FFFFFF
+                inactive_workspace #2A2A2A #2A2A2A #FFFFFF
                 urgent_workspace   #FF0044 #FF0044 #FFFFFF
                 binding_mode       #79FF0F #79FF0F #FFFFFF
         }

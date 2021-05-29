@@ -48,6 +48,11 @@ endif
 set termguicolors
 set background=dark
 colorscheme badwolf
+" Use the terminal's background:
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi FoldColumn guibg=NONE ctermbg=NONE
 
 if &termencoding == ""
 	let &termencoding = &encoding

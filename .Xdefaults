@@ -24,12 +24,11 @@ XTerm*vt100.deleteIsDEL:         false
 ! XTerm*vt100.ptyInitialErase:     true
 XTerm*vt100.scrollBar:           false
 
-! Based off https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh,
-! modified to share a background with the Badwolf vim theme.
-XTerm*vt100.background: #1C1B1A
+! https://github.com/Mayccoll/Gogh/blob/master/themes/paul-millr.sh
+XTerm*vt100.background: #000000
 XTerm*vt100.foreground: #FFFFFF
 ! Black
-XTerm*vt100.color0:     #1C1B1A
+XTerm*vt100.color0:     #2A2A2A
 ! Red
 XTerm*vt100.color1:     #FF0000
 ! Green
