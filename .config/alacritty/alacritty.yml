@@ -5,8 +5,11 @@ window:
   padding:
     x: 0
     y: 0
+
   dynamic_padding: false
+
   title: Alacritty
+
   class:
     instance: Alacritty
     general: Alacritty
