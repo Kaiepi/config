@@ -12,6 +12,11 @@ export VISUAL="nvim"
 export PAGER="less"
 export BROWSER="firefox"
 
+export LC_ALL="en_CA.UTF-8"
+export LC_CTYPE="en_CA.UTF-8"
+export LANG="en_CA.UTF-8"
+export LANGUAGE="en_CA.UTF-8"
+
 export CVSROOT="anoncvs@obsdacvs.cs.toronto.edu:/cvs"
 export CVSEDITOR="vim"
 
