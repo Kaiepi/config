@@ -8,7 +8,7 @@ PATH="$HOME/.local/bin:$PATH"
 export PATH
 
 export SHELL="zsh"
-export VISUAL="vim"
+export VISUAL="nvim"
 export PAGER="less"
 export BROWSER="firefox"
 
