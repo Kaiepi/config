@@ -22,6 +22,7 @@ theming.
     - Raku (to `~/.raku`)
     - Idris (to `~/.idris`)
     - Idris 2 (to `~/.idris2`)
+    - Scala 3 (SBT should exist in `~/.sbt`)
 3. Set up X.org with the [Iosevka SS05](https://github.com/be5invis/Iosevka) and Noto font families. Symbola isn't required by this, but wouldn't hurt either.
 4. Follow the instructions for installing the [Plug](https://github.com/junegunn/vim-plug) vim plugin.
 5. Pick a background to use and save it as `~/background.jpg` (not sure if mine's copyrighted...).
