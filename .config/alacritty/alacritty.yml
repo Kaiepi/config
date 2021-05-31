@@ -34,10 +34,10 @@ font:
     family: Iosevka Fixed SS05
     style: Bold Extended Italic
 
-  size: 6.0
+  size: 10.0
 
   offset:
-    x: 0
+    x: -1
     y: -1
 
 draw_bold_text_with_bright_colors: true
