@@ -15,6 +15,7 @@ theming.
     - rofi
     - feh
     - alacritty (optional, fallback to xterm)
+    - delta (a.k.a. git-delta on some package managers)
 2. Install the following (or remove their related `PATH`s from `.zshenv` and vim config in `.vim/vimrc`/`.vim/ftplugin/after`):
     - Haskell
     - Racket

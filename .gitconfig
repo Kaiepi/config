@@ -1,0 +1,22 @@
+# This is Git's per-user configuration file.
+[core]
+	editor = nvim
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[diff]
+	colorMoved = plain
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[interactive]
+    diffFilter = delta
+[delta]
+    line-numbers = true
+    syntax-theme = none
+[color "diff"]
+	oldMoved = dim bold red
+	newMoved = dim bold green
