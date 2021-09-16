@@ -34,7 +34,7 @@ font:
     family: Iosevka Fixed SS05
     style: Bold Extended Italic
 
-  size: 10.0
+  size: 6.0
 
   offset:
     x: -1
