@@ -41,7 +41,7 @@ bindsym Mod4+Return exec alacritty || xterm
 bindsym Mod4+Shift+q kill
 
 # start bemenu (a program launcher)
-bindsym Mod4+d exec bemenu-run -p '>>>' --fn 'Iosevka SS05 Fixed 11' \
+bindsym Mod4+d exec bemenu-run -p '>>>' --fn 'Iosevka SS05 Fixed 10' \
     --tb '#2A2A2A' --tf '#FF0080' \
     --fb '#2A2A2A' --ff '#FFFFFF' \
     --nb '#2A2A2A' --nf '#FFFFFF' \
