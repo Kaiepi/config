@@ -81,6 +81,8 @@ set smarttab
 
 " https://github.com/onivim/oni/issues/2342
 tnoremap <s-space> <space>
+" Do not force me to type :q twice out of sloppiness asshole.
+nnoremap q: :q
 
 set ruler
 set number
