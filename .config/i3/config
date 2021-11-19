@@ -43,10 +43,10 @@ bindsym Mod4+Shift+q kill
 # start bemenu (a program launcher)
 bindsym Mod4+d exec bemenu-run -p '>>>' --fn 'Iosevka SS05 Fixed 11' \
     --tb '#2A2A2A' --tf '#FF0080' \
-    --fb '#2A2A2A' --ff '#FF0080' \
+    --fb '#2A2A2A' --ff '#FFFFFF' \
     --nb '#2A2A2A' --nf '#FFFFFF' \
     --hb '#2A2A2A' --hf '#FF0080' \
-    --sb '#2A2A2A' --sf '#FF0080'
+    --sb '#2A2A2A' --sf '#FFFFFF'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
