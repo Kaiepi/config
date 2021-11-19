@@ -12,7 +12,7 @@ theming.
     - git
     - i3
     - i3status
-    - rofi
+    - bemenu
     - feh
     - alacritty (optional, fallback to xterm)
     - delta (a.k.a. git-delta on some package managers)
