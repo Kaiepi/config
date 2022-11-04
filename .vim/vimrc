@@ -11,14 +11,14 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'lambdalisue/fern.vim', { 'branch': 'main' }
 
 Plug 'junegunn/vim-easy-align'
 
 Plug 'vim-scripts/c.vim', { 'for': 'c' }
 
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'jaspervdj/stylish-haskell', { 'for': 'haskell' }
+Plug 'jaspervdj/stylish-haskell', { 'for': 'haskell', 'branch': 'main' }
 
 Plug 'pangloss/vim-javascript',      { 'for': 'javascript' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
@@ -30,6 +30,10 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'idris-hackers/idris-vim', { 'for': 'idris' }
 
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+
+Plug 'vim-scripts/forth.vim', { 'for': 'forth' }
+
+Plug 'preservim/vim-markdown', { 'for': 'markdown' }
 call plug#end()
 
 set autoread
@@ -64,9 +68,9 @@ set fileencodings=utf-8,latin1
 
 set ffs=unix,mac,dos
 
-set ignorecase
-set smartcase
-
+set nowrap
+set nohlsearch
+set noincsearch
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -90,7 +94,7 @@ set number
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :Fern . -drawer<CR>
 
 " vipga=
 xmap ga <Plug>(EasyAlign)
@@ -112,6 +116,7 @@ inoremap <S-Tab> <C-R>=CleverTab(1)<CR>
 
 autocmd BufRead,BufNewFile *.c set ft=c
 autocmd BufRead,BufNewFile *.decl set ft=decl
+autocmd BufRead,BufNewFile *.forth set ft=forth
 autocmd BufRead,BufNewFile *.h set ft=c
 autocmd BufRead,BufNewFile *.hs set ft=haskell
 autocmd BufRead,BufNewFile *.idr set ft=idris
