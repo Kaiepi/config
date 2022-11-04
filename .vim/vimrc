@@ -73,6 +73,7 @@ set nohlsearch
 set noincsearch
 set noerrorbells
 set novisualbell
+set nofoldenable
 set t_vb=
 set tm=500
 
