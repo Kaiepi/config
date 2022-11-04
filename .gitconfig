@@ -1,6 +1,8 @@
 # This is Git's per-user configuration file.
 [core]
 	editor = nvim
+	fscache = true
+    preloadConfig = true
 [pull]
 	rebase = false
 [init]
