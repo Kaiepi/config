@@ -19,19 +19,19 @@ scrolling:
 
 font:
   normal:
-    family: Iosevka Fixed SS05
+    family: Hack
     style: Extended
 
   italic:
-    family: Iosevka Fixed SS05
+    family: Hack
     style: Extended Italic
 
   bold:
-    family: Iosevka Fixed SS05
+    family: Hack
     style: Bold Extended
 
   bold_italic:
-    family: Iosevka Fixed SS05
+    family: Hack
     style: Bold Extended Italic
 
   size: 6.0
