@@ -1,25 +1,3 @@
-export NQP_HOME="$HOME/.raku/share/nqp";
-export RAKUDO_HOME="$HOME/.raku/share/perl6";
-export JAVA_HOME="/usr/local/jdk-11";
-
-export PERL5LIB="/home/morfent/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}";
-export PERL_LOCAL_LIB_ROOT="/home/morfent/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}";
-export PERL_MB_OPT="--install_base \"/home/morfent/perl5\"";
-export PERL_MM_OPT="INSTALL_BASE=/home/morfent/perl5";
-
-PATH="$HOME/perl5/bin:$PATH";                         # Perl
-PATH="$HOME/.raku/bin:$RAKUDO_HOME/site/bin:$PATH"    # Raku
-PATH="$JAVA_HOME/bin:$PATH"                           # Java
-PATH="$HOME/.cabal/bin:/usr/local/lib/ghc/bin/:$PATH" # Haskell
-PATH="$HOME/.racket/7.7/bin:$PATH"                    # Racket
-PATH="$HOME/.idris2/bin:$PATH"                        # Idris 2
-PATH="$HOME/.sbt/bin:$PATH"                           # SBT
-PATH="$HOME/.dotty/bin:$PATH"                         # Scala
-PATH="$HOME/.cargo/bin:$PATH"                         # Rust
-PATH="$HOME/.erlang/bin:$PATH"                        # Erlang
-PATH="$HOME/.local/bin:$PATH"
-export PATH
-
 export LC_ALL=en_CA.UTF-8
 export LC_CTYPE=en_CA.UTF-8
 export LANG=en_CA.UTF-8
