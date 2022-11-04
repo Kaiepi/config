@@ -1,12 +1,3 @@
-PATH="$HOME/.raku/bin:$HOME/.raku/share/perl6/site/bin:$PATH" # Raku
-PATH="/usr/local/jdk-11/bin:$PATH"                            # Java
-PATH="$HOME/.cabal/bin:/usr/local/lib/ghc/bin/:$PATH"         # Haskell
-PATH="$HOME/.racket/7.7/bin:$PATH"                            # Racket
-PATH="$HOME/.idris2/bin:$PATH"                                # Idris 2
-PATH="$HOME/.sbt/bin:$PATH"                                   # SBT
-PATH="$HOME/.local/bin:$PATH"
-export PATH
-
 export SHELL="zsh"
 export VISUAL="nvim"
 export PAGER="less"
