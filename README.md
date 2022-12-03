@@ -7,7 +7,7 @@ theming.
 ## Installing
 
 1. Install the following packages:
-    - nushell or zsh
+    - nushell and sqlite (or just zsh)
     - neovim
     - git
     - i3
