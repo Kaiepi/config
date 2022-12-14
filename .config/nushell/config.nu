@@ -127,58 +127,8 @@ module completions {
 # Get just the extern definitions without the custom completion commands
 use completions *
 
-let mono_theme = {
-    separator: $mono_02
-    leading_trailing_space_bg: { fg: $mono_03 }
-    header: $mono_04
-    empty: $mono_03
-    bool: $mono_03
-    int: $mono_03
-    filesize: $mono_03
-    duration: $mono_03
-    date: $mono_03
-    range: $mono_03
-    float: $mono_03
-    string: $mono_03
-    nothing: $mono_03
-    binary: $mono_03
-    cellpath: $mono_03
-    row_index: $mono_04
-    record: $mono_03
-    list: $mono_03
-    block: $mono_03
-    hints: $mono_01
-
-    shape_garbage: { fg: $mono_02 }
-    shape_binary: $mono_03
-    shape_bool: $mono_03
-    shape_int: $mono_03
-    shape_float: $mono_03
-    shape_range: $mono_03
-    shape_internalcall: $mono_03
-    shape_external: $mono_03
-    shape_externalarg: $mono_03
-    shape_literal: $mono_03
-    shape_operator: $mono_03
-    shape_signature: $mono_03
-    shape_string: $mono_03
-    shape_string_interpolation: $mono_03
-    shape_datetime: $mono_03
-    shape_list: $mono_03
-    shape_table: $mono_03
-    shape_record: $mono_03
-    shape_block: $mono_03
-    shape_filepath: $mono_03
-    shape_directory: $mono_03
-    shape_globpattern: $mono_03
-    shape_variable: $mono_03
-    shape_flag: $mono_03
-    shape_custom: $mono_03
-    shape_nothing: $mono_03
-}
-
 let-env config = {
-  color_config: $mono_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
+  color_config: (cswap theme)
   use_grid_icons: true
   footer_mode: "25" # always, never, number_of_rows, auto
   float_precision: 2
@@ -248,7 +198,7 @@ let-env config = {
       {
         name: completion_menu
         only_buffer_difference: false
-        marker: $"($reset_0)| "
+        marker: $"(cswap leave)| "
         type: {
             layout: columnar
             columns: 4
@@ -256,29 +206,29 @@ let-env config = {
             col_padding: 2
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
       }
       {
         name: history_menu
         only_buffer_difference: true
-        marker: $"($reset_0)? "
+        marker: $"(cswap leave)? "
         type: {
             layout: list
             page_size: 10
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
       }
       {
         name: help_menu
         only_buffer_difference: true
-        marker: $"($reset_0)? "
+        marker: $"(cswap leave)? "
         type: {
             layout: description
             columns: 4
@@ -288,9 +238,9 @@ let-env config = {
             description_rows: 10
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
       }
       # Example of extra menus created using a nushell source
@@ -299,7 +249,7 @@ let-env config = {
       {
         name: commands_menu
         only_buffer_difference: false
-        marker: $"($reset_0)# "
+        marker: $"(cswap leave)# "
         type: {
             layout: columnar
             columns: 4
@@ -307,9 +257,9 @@ let-env config = {
             col_padding: 2
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
         source: { |buffer, position|
             $nu.scope.commands
@@ -320,15 +270,15 @@ let-env config = {
       {
         name: vars_menu
         only_buffer_difference: true
-        marker: $"($reset_0)# "
+        marker: $"(cswap leave)# "
         type: {
             layout: list
             page_size: 10
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
         source: { |buffer, position|
             $nu.scope.vars
@@ -340,7 +290,7 @@ let-env config = {
       {
         name: commands_with_description
         only_buffer_difference: true
-        marker: $"($reset_0)# "
+        marker: $"(cswap leave)# "
         type: {
             layout: description
             columns: 4
@@ -350,9 +300,9 @@ let-env config = {
             description_rows: 10
         }
         style: {
-            text: $mono_03
-            selected_text: { fg: $mono_03 attr: r }
-            description_text: $mono_03
+            text: $"(cswap mono 2)"
+            selected_text: { fg: $"(cswap mono 2)" attr: r }
+            description_text: $"(cswap mono 2)"
         }
         source: { |buffer, position|
             $nu.scope.commands
