@@ -199,7 +199,7 @@ let-env config = {
     abbreviations: false # set to true to allow you to do things like cd s/o/f and nushell expand it to cd some/other/folder
   }
   table: {
-    mode: compact # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+    mode: heavy # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
     index_mode: always # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
     trim: {
       methodology: wrapping # truncating
