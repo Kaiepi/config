@@ -6,7 +6,7 @@ let mono_02 = "#666666"
 let mono_03 = "#BBBBBB"
 let mono_04 = "#FFFFFF"
 let reset_0 = $"(ansi -e { fg: $mono_02 })"
-let reset_1 = $"(ansi -e { fg: $mono_03 })"
+let reset_1 = $"(ansi -e { fg: $mono_04 })"
 
 # Use nushell functions to define your right and left prompt
 let-env PROMPT_COMMAND = { $"\e[3 q($reset_1)($env.PWD)"}
