@@ -8,7 +8,7 @@ theming.
 
 1. Install the following packages:
     - nushell and sqlite (or just zsh)
-    - neovim
+    - neovim (or vim)
     - git
     - i3
     - i3status
